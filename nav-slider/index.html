@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    ﻿<link type="text/css" rel="stylesheet" href="../lib/css/reset.css">
+    <style>
+        .hori-align{left:50%;transform:translateX(-50%);-webkit-transform:translateX(-50%);}
+        .vertical-align{top:50%;transform:translateY(-50%);-webkit-transform:translateY(-50%);}
+        .wev-slider-group{height:212px;white-space:nowrap;vertical-align: top;position:relative;}
+        .wev-slider-item{margin-top:6px;display:inline-block;width:100%;height:100%;vertical-align: top;position:relative;padding:0px 15px;box-sizing:border-box;}
+        .wev-slider-item ul:before{height:0;}
+        .wev-slider-item ul{margin:0;padding:0;list-style:none;display:block;vertical-align: top;}
+        .wev-slider-item ul li{float:left;width:25%;text-align:center;margin-top:24px;vertical-align: top;}
+        .wev-slider-item ul li a{display:block;color:#999;font-size:12px;}
+        .wev-slider-item ul li p{margin:10px 0;}
+        .wev-slider-item ul li img{width:30px;height:30px;}
+        .wev-slider-item > img{position:absolute;right:15px;}
+        img.show-left{transform:rotate(180deg);left:15px;}
+    </style>
+    <script type="text/javascript" src="../lib/js/zepto.min.js"></script>
+</head>
+<body>
+<div class="wev-slider-group">
+    <div class="wev-slider-item">
+        <ul class="clear">
+            <li>
+                <a href="#">
+                    <img src="icons/26.svg">
+                    <p>开门</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="icons/22.svg">
+                    <p>停车</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="icons/21.svg">
+                    <p>会议室</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="icons/24.svg">
+                    <p>报修</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="icons/13.svg">
+                    <p>快递</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="icons/24.svg">
+                    <p>保洁</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="icons/29.svg">
+                    <p>摄影棚</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="icons/30.svg">
+                    <p>太空舱</p>
+                </a>
+            </li>
+        </ul>
+        <img src="icons/icon_arrow_r.svg" class="show-right vertical-align"></img>
+    </div>
+    <div class="wev-slider-item">
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="icons/25.svg">
+                    <p>活动</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="icons/28.svg">
+                    <p>更多</p>
+                </a>
+            </li>
+        </ul>
+        <img src="icons/icon_arrow_r.svg" class="show-left vertical-align"></img>
+    </div>
+</div>
+<script>
+    $("img.show-right").bind("click",function(){
+        $(".wev-slider-group").css({"transform":"translateX(-100%)","-webkit-transform":"translateX(-100%)","transition-duration":"500ms"});
+    });
+    $("img.show-left").bind("click",function(){
+        $(".wev-slider-group").css({"transform":"translateX(0)","-webkit-transform":"translateX(0)","transition-duration":"500ms"});
+    });
+</script>
+
+</body>
+</html>
