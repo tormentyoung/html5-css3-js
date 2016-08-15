@@ -1,0 +1,11 @@
+input,textarea{
+  padding:0;
+  -webkit-appearance: none;
+  appearance: none;
+  outline-offset: 0;
+  outline-style: none;
+  outline-width: 0;
+  -webkit-font-smoothing: inherit;
+  background-image: none;
+  border-radius: 0px;
+}
