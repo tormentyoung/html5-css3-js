@@ -1,0 +1,39 @@
+.progress-container {padding: 15px 20px 40px}
+.progress-container:after {clear: both;content: '.';visibility: hidden;display: block;height: 0px;}
+.progress-container .progress-block{float: left;width: 10%;position:relative;text-align: center;}
+.progress-container .process{float: left;width: 20%;position:relative;text-align: center;}
+.progress-container .progress-block .icon-node{width:27px;height:27px;display:inline-block;background-image: url("/mobilemode/apps/vanke/images/submit_wev8.png");background-size:27px 27px;background-position:center center;background-repeat:no-repeat;}
+.progress-container .progress-block.ready .icon-node{background-image: url("/mobilemode/apps/vanke/images/submit_slt_wev8.png");}
+.progress-container .progress-block .text{position: absolute;top: 41px;display: block;width: 60px;height: 16px;font: 12px/16px simsun;color: gray;overflow: hidden;left: -10px;}
+.progress-container .progress-block.ready .text{color:#7abd53;}
+.progress-container .process .icon-process{width:80%;height:2px;display:inline-block;background-color:#F1F1F1;margin-top: 12px;}
+.progress-container .process.ready .icon-process{background-color:#C2E29F;}
+
+
+<section class="progress-container"> 
+	<div class="progress-block ready">
+		<i class="icon-node"></i>
+		<span class="text">签约录入</span>
+	</div>
+	<div class="process">
+		<i class="icon-process"></i>
+	</div>
+	<div class="progress-block">
+		<i class="icon-node"></i>
+		<span class="text">合同审核</span>
+	</div>
+	<div class="process">
+		<i class="icon-process"></i>
+	</div>
+	<div class="progress-block">
+		<i class="icon-node"></i>	
+		<span class="text">立即付款</span>
+	</div>
+	<div class="process">
+		<i class="icon-process"></i>
+	</div>
+	<div class="progress-block"> 
+		<i class="icon-node"></i>
+		<span class="text">查看合同</span>
+	</div>
+</section>

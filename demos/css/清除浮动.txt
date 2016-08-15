@@ -1,0 +1,2 @@
+.clearfix:after { content: "."; clear: both; height: 0; visibility: hidden; display: block; }
+.clearfix { clear: both; *zoom: 1;float:none; }
